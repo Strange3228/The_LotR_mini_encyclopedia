@@ -13,7 +13,6 @@ const Books = () => {
     const [books, setBooks] = useState([]);
     const [chapters, setChapter] = useState([]);
     const [search, setSearch] = useState('');
-    const [query, setQuery] = useState('');
 
     useEffect(() => {
         getBooks();
@@ -26,7 +25,6 @@ const Books = () => {
     }
     const getSearch = e => {
         e.preventDefault();
-        setQuery(search);
         setSearch('');
     }
 
@@ -34,7 +32,6 @@ const Books = () => {
         try{
             let data = await api.get('/book')
                 .then(({data}) => data);
-                console.log(data);
                 setBooks(data.docs);
         }
         catch(err) {
@@ -45,7 +42,6 @@ const Books = () => {
         try{
             let data = await api.get(`/chapter`)
                 .then(({data}) => data);
-                console.log(data.docs);
                 setChapter(data.docs)
         }
         catch(err) {
@@ -53,7 +49,16 @@ const Books = () => {
         }
     }
 
-    let idBook;
+
+    const findBookName = (index) => {
+        let bookObject = books.find(book => book._id === index);
+        try{
+            return (bookObject.name)
+        }
+        catch(err) {
+            console.log(err);
+        }
+    }
 
     return(
         <div className={style.hero}>
@@ -69,18 +74,12 @@ const Books = () => {
                 <h1 className={style.listTitle}>Chapter search:</h1>
                 <form className={style.searchForm} onSubmit={getSearch}>
                     <input placeholder="Enter chapter name..." className={style.searchBar} type="text" value={search} onChange={updateSearch}/>
-                    <button className={style.searchButton} type="submit">Search</button>
                 </form>
                 <ul className={style.listChapters}>
                 {
                     chapters.map(chapter => {
                         if (chapter.chapterName.includes(search)){
-                            {books.map(book => {
-                                if(book.id = chapter.book){
-                                    idBook = book.name
-                                }
-                            })}
-                            return(<li className={style.listItemChapters} key={chapter.id}>{chapter.chapterName} : {idBook}</li>)
+                            return(<li className={style.listItemChapters} key={chapter.id}>{chapter.chapterName} : {findBookName(chapter.book)}</li>)
                         }
                     })
                 }

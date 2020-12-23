@@ -15,7 +15,7 @@ const Nav = () => {
                         <button className={style.navBtn}>Books</button>
                     </li>
                 </Link>
-                <Link to="/">
+                <Link to="/films">
                     <li>
                         <button className={style.navBtn}>Films</button>
                     </li>
