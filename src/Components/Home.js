@@ -1,15 +1,15 @@
 import React from 'react';
-import "../styles/Home.css";
+import style from "../styles/home.module.css";
 
 const Home = () => {
 
     return(
-        <div className="hero">
-            <div className="title">
-                <h1>Hello My Lord</h1>
+        <div className={style.hero}>
+            <div className={style.title}>
+                <h1 className={style.titleText}>Hello My Lord</h1>
             </div>
-            <p className="subtitle">I will show you everything that you asked.</p>
-            <p className="additional-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p className={style.subtitle}>I will show you everything that you asked.</p>
+            <p className={style.additionalText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Maiores, veniam inventore. Harum at, voluptas maxime aperiam commodi dolorem cupiditate 
                 laboriosam numquam nulla. Officiis iusto nobis quam ea deleniti perspiciatis sequi.</p>
         </div>
