@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/The_LotR_mini_encyclopedia/static/css/main.0f17a697.chunk.css",
+    "main.js": "/The_LotR_mini_encyclopedia/static/js/main.abb3e8ab.chunk.js",
+    "main.js.map": "/The_LotR_mini_encyclopedia/static/js/main.abb3e8ab.chunk.js.map",
+    "runtime-main.js": "/The_LotR_mini_encyclopedia/static/js/runtime-main.6173c618.js",
+    "runtime-main.js.map": "/The_LotR_mini_encyclopedia/static/js/runtime-main.6173c618.js.map",
+    "static/js/2.31eb768e.chunk.js": "/The_LotR_mini_encyclopedia/static/js/2.31eb768e.chunk.js",
+    "static/js/2.31eb768e.chunk.js.map": "/The_LotR_mini_encyclopedia/static/js/2.31eb768e.chunk.js.map",
+    "static/js/3.e5ce7739.chunk.js": "/The_LotR_mini_encyclopedia/static/js/3.e5ce7739.chunk.js",
+    "static/js/3.e5ce7739.chunk.js.map": "/The_LotR_mini_encyclopedia/static/js/3.e5ce7739.chunk.js.map",
+    "index.html": "/The_LotR_mini_encyclopedia/index.html",
+    "static/css/main.0f17a697.chunk.css.map": "/The_LotR_mini_encyclopedia/static/css/main.0f17a697.chunk.css.map",
+    "static/js/2.31eb768e.chunk.js.LICENSE.txt": "/The_LotR_mini_encyclopedia/static/js/2.31eb768e.chunk.js.LICENSE.txt",
+    "static/media/characters.module.css": "/The_LotR_mini_encyclopedia/static/media/back-paper.43046631.png",
+    "static/media/App.css": "/The_LotR_mini_encyclopedia/static/media/gandalf-lord-of-the-rings-minas-tirith-e1527276212907.40fe13d5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6173c618.js",
+    "static/js/2.31eb768e.chunk.js",
+    "static/css/main.0f17a697.chunk.css",
+    "static/js/main.abb3e8ab.chunk.js"
+  ]
+}
