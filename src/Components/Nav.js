@@ -20,7 +20,7 @@ const Nav = () => {
                         <button className={style.navBtn}>Films</button>
                     </li>
                 </Link>
-                <Link to="/">
+                <Link to="/characters">
                     <li>
                         <button className={style.navBtn}>Characters</button>
                     </li>

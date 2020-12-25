@@ -1,0 +1,129 @@
+.charactersHero {
+  width: 80%;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.card {
+  position: relative;
+  font-family: Langar;
+  color: rgb(39, 39, 39);
+  width: 200px;
+  min-height: 270px;
+  margin: 20px;
+  background-image: url("../img/back-paper.png");
+  background-position: center;
+  background-size: cover;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  position: relative;
+  text-align: center;
+}
+/*.name::before {
+  content: "Name: ";
+  font-size: 10px;
+  position: absolute;
+  left: -5%;
+  bottom: 75%;
+}*/
+.race {
+  position: relative;
+}
+.race::before {
+  content: "Race: ";
+  font-size: 10px;
+  position: absolute;
+  left: -10%;
+  bottom: 75%;
+}
+.gender {
+  position: relative;
+}
+.gender::before {
+  content: "Gander: ";
+  font-size: 10px;
+  position: absolute;
+  left: -5%;
+  bottom: 75%;
+}
+.AddInfoBtn {
+  position: absolute;
+  background-color: transparent;
+  bottom: 1%;
+  right: 5%;
+  border-radius: 15px;
+  font-weight: lighter;
+  outline: none;
+  border: none;
+  padding: 2px 10px;
+  font-family: Langar;
+}
+a {
+  color: rgb(39, 39, 39);
+  text-decoration: underline;
+}
+
+.filterForm {
+  width: 80%;
+  margin: 25px auto;
+  padding: 40px 40px 20px;
+  background-color: rgba(228, 220, 211, 0.671);
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+.formTitle {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  color: rgb(252, 252, 252);
+  text-shadow: 0px 0px 6px rgb(54, 54, 54);
+}
+label {
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: rgb(252, 252, 252);
+  text-shadow: 0px 0px 6px rgb(54, 54, 54);
+}
+label input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: rgb(54, 54, 54);
+  font-weight: 600;
+}
+label select {
+  border: none;
+  outline: none;
+  padding: 5px;
+  color: rgb(141, 141, 141);
+  font-weight: 600;
+}
+.searchButton {
+  flex-grow: 1;
+  border: rgba(100, 100, 100, 0) 3px solid;
+  outline: none;
+  padding: 6px;
+  color: rgb(54, 54, 54);
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+}
+.searchButton:hover {
+  border: rgb(100, 100, 100) 3px solid;
+}

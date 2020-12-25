@@ -67,3 +67,15 @@
   border-bottom-right-radius: 15px;
   cursor: pointer;
 }
+
+@media (max-width: 788px) {
+  .searchFormBlock {
+    width: 90%;
+  }
+  .hero {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
